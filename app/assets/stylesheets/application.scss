@@ -1,0 +1,193 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+/*  background: url(istockphoto-1255703482-612x612.jpg) no-repeat;*/
+  background-size: cover;
+  color: black;
+  min-height: 100vh;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+}
+.navbar-brand{
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size:22px;
+  margin-left: 10px;
+  padding-right:5rem;
+  font-weight:900;
+}
+.logo{
+  margin-left: 4rem;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  outline: none;
+  width: 90px; 
+  height: 90px; 
+  display: block; 
+}
+.navbar {
+  font-family: Poppins;
+  font-size: 20px;
+  color: #f1f1f1;
+  height: 90px;
+  background-color: #ffa500;
+  border: 2px solid #f1f1f1;
+}
+.container{
+  color: red;
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 15em;
+  width: auto;
+}
+.navbar .nav{
+  text-align: center;
+}
+.nav-item ul li{
+  list-style: none;
+}
+.nav-item ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+a, a:link{
+  text-decoration: none;
+  color: #38678b;
+}
+#login-panel .panel-footer{
+  font-weight: normal;
+}
+.table { 
+  background-color: #fff;
+  text-align: center;
+/*  border: 2px solid;*/
+}
+.signup-form{
+  width:500px;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+  background: #fff;
+  padding:20px;
+  margin:8% auto 0;
+  border-radius:15px;
+  border:2px solid #ddd;
+  text-align: center;
+}
+.signup-form h2{
+  color:black;
+  margin-bottom:30px;
+}
+.panel-primary .panel-heading {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.panel-heading{
+/*  text-align: center;*/
+  padding-top: 10px;
+  height: 50px;
+  border: 1px solid #f1f1f1;
+}
+
+.panel{
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 2%;
+}
+.panel-body{
+  color: #fff;
+}
+.col-md-4 {
+  margin-top: 50px;
+  border-radius: 2%;
+  text-align: center;
+  margin-left: 450px;
+}
+.card-text{
+  color: black;
+}
+.footer{
+  width: 100%;
+  font-size: 0.95rem;
+  padding: 2rem 1rem 2rem 2rem;
+  background-color: slateblue;
+  border: 1px solid #aliceblue;
+  color: black;
+  left: 0;
+  text-align: center;
+  bottom: 0px;
+  position: fixed;
+}
+h1,
+h2,h3,h4 {
+font-weight: bold;
+font-family: 'poppins';
+}
+p {
+font-size: 18px;
+color: white;
+}
+a:visited {
+color: black;
+}
+.jumbotron {
+background: #0048CD;
+color: white;
+text-align: center;
+}
+.link {
+color: white;
+}
+.btn-primary {
+color: white;
+border-color: white;
+margin-bottom: 5px;
+}
+.btn-sm {
+background-color: white;
+display: inline-block;
+}
+.btn-danger {
+transition: 0.3s ease;
+display: inline-block;
+}
+img,
+video,
+audio {
+margin-top: 20px;
+max-width: 80%;
+}
+caption {
+float: left;
+clear: both;
+}

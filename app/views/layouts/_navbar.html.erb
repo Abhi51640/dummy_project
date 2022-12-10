@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">DEMO</a>
+    <div class="logo">
+      <%= image_tag asset_url('codecanyon.png') %>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarColor03">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="<%= users_path %>">Profile
+            <!-- <span class="visually-hidden">(current)</span> -->
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Post</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Friends</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <!-- Login and Logout button -->
+      <% if user_signed_in? %>
+        <%= button_to 'Log Out', destroy_user_session_path, method: :delete, class: 'btn btn-danger' %> |
+      <% elsif !user_signed_in? %>
+        <%= link_to "Sign up",  new_user_registration_path, method: :new, class: "btn btn-link"%> 
+        <%= link_to "Log In", new_user_session_path, method: :new, class: "btn btn-success" %> |
+      <% end %>
+    </div>
+  </div>
+</nav>
