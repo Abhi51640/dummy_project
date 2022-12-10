@@ -1,0 +1,20 @@
+<% if current_user %>
+  <table class="table table-striped">
+    <thead>
+     <tr>
+      <th>S.No.</th>
+       <th>Name</th>
+       <th>Email</th>
+       <br />
+      </tr>
+    </thead>
+    <h5>User List</h5>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
