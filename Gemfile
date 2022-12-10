@@ -32,7 +32,7 @@ gem "redis", "~> 4.0"
 gem 'devise'
 gem "pry"
 gem 'bootstrap', '>= 5.2.3'
-
+gem "image_processing", ">= 1.2"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"

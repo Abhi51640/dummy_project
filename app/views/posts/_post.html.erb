@@ -1,0 +1,19 @@
+<div class="card shadow-sm">
+  <%= image_tag url_for(post.avatar) if post.avatar.attached? %>
+  <div class="card-body">
+    <p class="card-text"><%= post.title %></p>
+    <div class="d-flex justify-content-between align-items-center">
+    <div class="btn-group">
+      <%= link_to "Edit", edit_post_path(post), :remote => true  , class: "btn btn-sm btn-outline-secondary" %>
+      <%= button_to 'Delete', post_path(post), method: :delete ,  class:"btn btn-sm btn-outline-secondary" %>
+    </div>
+    <small class="text-muted"><%=(@post.created_at) %></small>
+  </div>
+  <%= render "comments/form", post: post %>
+    <br/>
+    <% post.comments.each do |comment| %>
+      <br />
+      <%= comment.description %>
+    <% end %>
+  </div>
+</div>

@@ -7,4 +7,9 @@ Rails.application.routes.draw do
   
   resources :users
     root to: "homes#index"
+
+  # get 'posts', to: 'posts#new'
+  resources :posts do
+    resources :comments
+  end  
 end
