@@ -1,0 +1,9 @@
+<%= form_for ([post, post.comments.build]) do |f| %>
+  <p>
+    <br />
+    <%= f.text_area :description , placeholder: 'Write a Comment', style: 'width: 100%; border-radius:12px; padding: 10px;' %>
+  </p>
+    <%= f.submit "Create" , class: 'btn btn-success btn-sm float-end'%>
+    <%#= comment.description %>
+<% end %>
+<%= render   "comments/reply",post: post%>

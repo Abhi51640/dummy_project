@@ -1,0 +1,13 @@
+<%= form_for :post, url: post_path(@post) , method: :patch, local:true do |f| %>
+  </br>
+  <div class="form-group">
+    <%= f.text_area :title, class:'form-control', placeholder:'Tell us more about your project...', id: "exampleTextarea", rows: "3" %>
+  </div>
+  <div class="form-group clearfix">
+    <%= f.file_field :avatar, id:'uploadimage', class: 'form-control', style: 'width: 20%; float: right;' %>
+  </div>
+   </br>
+  <div class="form-group clearfix">
+    <%= f.submit id:'postbutton', class: 'btn btn-primary btn-lg float-end' %>
+  </div>
+<% end %>

@@ -1,0 +1,16 @@
+<% for comment in @comments %>
+  <tr>
+    <td><%= comment.commenter %></td>
+    <td><%= comment.body %></td>
+    <td><%= link_to 'Show', post_comment_path(@post, comment) %></td>
+    <td>
+        <%= link_to 'Edit', edit_post_comment_path(@post, comment) %>
+    </td>
+    <td>
+        <%= button_to 'Destroy', post_comment_path(@post, comment),:method => :delete %>
+    </td>
+  </tr>
+  <br />
+  <%= link_to 'New comment', new_post_comment_path(@post) %>
+  <%= link_to 'Back to Post', @post %>
+<% end %>

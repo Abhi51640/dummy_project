@@ -8,5 +8,5 @@
 
 if Rails.env.development?
   User.create!(email: 'abhishek@techwinners.in', password: '123456',
-                password_confirmation: '123456')
+                password_confirmation: '123456', first_name:'Abhishek', last_name:'Pal')
 end

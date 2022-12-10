@@ -1,0 +1,15 @@
+<div class="card my-1">
+  <div class="card-body">
+    <p class="font-weight-bold">Comments</p>
+    <% binding.pry %>
+    <%#= form_with(model: [@post, @post.comments.build]) do |f| %>
+      <div class="form-group">
+        <%= f.text_area :body, class: 'form-control' , placeholder: 'New Comments'%>
+      </div>
+      <br />
+      <%= f.submit 'Submit', class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>
+
+<%= render  @post.comments%>
