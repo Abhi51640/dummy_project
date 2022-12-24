@@ -5,7 +5,7 @@ class Post < ApplicationRecord
 
   has_many :comments, dependent: :destroy 
   
-  validates :avatar, presence: true
+  # validates :avatar, presence: true
 
   def self.search(search)
     where("title LIKE ? OR description LIKE ?","%#{search.downcase}%","%#{search.downcase}%")

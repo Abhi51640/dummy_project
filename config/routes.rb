@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   resources :posts do
     resources :comments
   end  
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
 end
