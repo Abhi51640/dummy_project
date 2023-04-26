@@ -37,6 +37,10 @@ gem 'image_processing', '>= 1.2'
 gem 'pry'
 gem 'redis', '~> 4.0'
 gem 'rubocop'
+gem 'sidekiq'
+gem 'sidekiq-cron'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"

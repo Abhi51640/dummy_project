@@ -26,6 +26,18 @@
             <div class="actions">
               <%= f.submit "Log in" , class:"btn btn-primary" %>
             </div>
+            <div class="actions">
+              <%=link_to "Login via Facebook", "omniauth_authorize_path(resource_name, provider)"%>
+            </div>
+       <!--      <% if devise_mapping.omniauthable? %>
+              <ul class="image-list signin-icons"> 
+                <%- resource_class.omniauth_providers.each do |provider| %>
+                  <ul><%= link_to omniauth_authorize_path(resource_name, provider), :title => "Sign in with #{provider.to_s.titleize}" do %>
+                    <%= image_tag "oauth_#{provider}.jpg", :alt => "Sign in with #{provider.to_s.titleize}", height: "25px;" %><% end -%>
+                  </ul>
+                <% end %>
+              </ul>
+            <% end -%> -->
             <br>
             <%= render "devise/shared/links" , :class => 'button'%>
           <% end %>
